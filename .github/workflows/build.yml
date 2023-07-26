@@ -38,6 +38,6 @@ jobs:
       - name: Release prebuilt
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "iTunes64-installation/SourceDir/PFiles/${{ env.targetZip }}"
+          artifacts: "installation/SourceDir/PFiles/${{ env.targetZip }}"
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}
